@@ -1,10 +1,11 @@
+<% content_for :title, "Best Demo site for highcharts gem" %>
 <h3>HighCharts gem Demo Site</h3>
 
 <div class="container">
   <div class="row">
     <div class="span3 bs-docs-sidebar">
-      <ul class="nav nav-list bs-docs-sidenav affix-top">
-        <li class="active">
+      <ul class="nav nav-list bs-docs-sidenav affix">
+        <li class="js-basic_line">
         <%= link_to  basic_line_charts_path, remote: true do -%>
           <i class="icon-chevron-right"></i>Basic Liine
         <%- end -%>
@@ -14,9 +15,14 @@
 
     <!-- demo charts master view -->
     <div class="span9">
+      <section id="welcome_chart">
+        <div class="page-header">
+          <h1> Welcome to Highcharts Demo site! Lets's click left side's menu to render chart.</h1>
+        </div>
+      </section>
       <section id="basic_line">
         <div class="page-header">
-          <h1>Line charts - Basic line</h1>
+          <h1> Basic Line</h1>
         </div>
       </section>
     </div>
