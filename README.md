@@ -12,3 +12,5 @@ ________________________
 ________________________
 
 License
+* Copyright (c) 2013 [Deshi Xiao](http://xiaods.mit-license.org) released under the MIT license
+
