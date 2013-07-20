@@ -1,18 +1,13 @@
 Highcharts Bootstrap
 ========================
 
-This application was generated with the rails_apps_composer gem:
-https://github.com/RailsApps/rails_apps_composer
-provided by the RailsApps Project:
-http://railsapps.github.io/
+Best Demo Site for Highcharts gem user
 
 ________________________
 
-Recipes:
-["apps4", "controllers", "core", "email", "extras", "frontend", "gems", "git", "init", "models", "prelaunch", "railsapps", "readme", "routes", "saas", "setup", "testing", "views"]
+## Line charts
 
-Preferences:
-{:git=>true, :apps4=>"rails-bootstrap", :database=>"default", :unit_test=>false, :integration=>false, :fixtures=>false, :frontend=>"bootstrap", :bootstrap=>"sass", :email=>"none", :authentication=>false, :devise_modules=>false, :authorization=>false, :starter_app=>false, :form_builder=>"simple_form", :quiet_assets=>true, :local_env_file=>true, :better_errors=>true, :dev_webserver=>"puma", :prod_webserver=>"puma", :templates=>"erb", :continuous_testing=>"none", :rvmrc=>false, :ban_spiders=>true, :github=>true}
+* Basic line
 
 ________________________
 
