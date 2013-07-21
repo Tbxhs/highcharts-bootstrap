@@ -10,6 +10,12 @@
           <i class="icon-chevron-right"></i>Basic Liine
         <%- end -%>
         </li>
+        <li class="js-line_ajax">
+        <%= link_to  line_ajax_charts_path, remote: true do -%>
+          <i class="icon-chevron-right"></i> Ajax loaded data, clickable points
+        <%- end -%>
+        </li>
+
       </ul>
     </div>
 
@@ -23,6 +29,12 @@
       <section id="basic_line">
         <div class="page-header">
           <h1> Basic Line</h1>
+        </div>
+      </section>
+
+      <section id="line_ajax">
+        <div class="page-header">
+          <h1> Ajax loaded data, clickable points</h1>
         </div>
       </section>
     </div>

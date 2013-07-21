@@ -9,6 +9,8 @@ HighchartsBootstrap::Application.configure do
   # Do not eager load code on boot.
   config.eager_load = false
 
+  config.serve_static_assets  = true
+
   # Show full error reports and disable caching.
   config.consider_all_requests_local       = true
   config.action_controller.perform_caching = false
@@ -26,4 +28,7 @@ HighchartsBootstrap::Application.configure do
   # This option may cause significant delays in view rendering with a large
   # number of complex assets.
   config.assets.debug = true
+
+  # config.assets.enabled = true
+  # config.assets.paths << "#{Rails.root}/app/assets/files"
 end
