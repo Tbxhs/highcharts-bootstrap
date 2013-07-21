@@ -3,6 +3,7 @@ HighchartsBootstrap::Application.routes.draw do
     collection do
       get 'basic_line'
       get 'line_ajax'
+      get 'line_labels'
     end
   end
 

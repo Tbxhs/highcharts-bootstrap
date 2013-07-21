@@ -172,4 +172,55 @@ EOJS
     return @chart
   end
 
+
+  def self.line_labels_chart
+    @chart = LazyHighCharts::HighChart.new('line_labels') do |f|
+      f.chart({
+         type: 'line'
+      })
+      f.title({
+        text: 'Monthly Average Temperature'
+      })
+      f.subtitle({
+          text: 'Source: WorldClimate.com'
+      })
+      f.xAxis({
+        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+      })
+      f.yAxis({
+         title: {
+                             text: 'Temperature (°C)'
+                         }
+      })
+      f.tooltip({
+        enabled: false,
+        formatter: %|function() {
+                             return '<b>'+ this.series.name +'</b><br/>'+
+                                 this.x +': '+ this.y +'°C';
+                         }|.js_code
+
+      })
+      f.plotOptions({
+         line: {
+                             dataLabels: {
+                                                     enabled: true
+                                                 },
+                             enableMouseTracking: false
+                         }
+      })
+
+      f.series({
+         name: 'Tokyo',
+         data: [7.0, 6.9, 9.5, 14.5, 18.4, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
+      })
+      f.series({
+          name: 'London',
+          data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
+      
+      })
+
+    end
+
+  end
+
 end
